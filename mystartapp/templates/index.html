@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>Help me!!</h1>
+{% for post in posts %}
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.content }}</p>
+    <p>Name: {{  post.name }}</p>
+    <p>Email Address : {{ post.email }}</p>
+    <p>Password : {{post.password}}</p>
+    <p>Phone Number : {{ post.phone_number }}</p>
+    <p>DOB : {{posts.date_of_birth}}</p>
+{% endfor %}
+</body>
+</html>
